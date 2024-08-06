@@ -1,0 +1,162 @@
+/*General*/
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+a, p {
+    font-size: 12px !important;
+}
+
+h1 {
+    font-size: 32px !important;
+}
+
+h2 {
+    font-size: 24px !important;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+/*Background*/
+.bg-snow {
+    background-color: #EAF1F6;
+}
+
+/*Navbar*/
+nav {
+    min-height: 60px;
+    border-radius: 0 0 30px 30px;
+    -webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+}
+nav img {
+    margin: 3px;
+}
+.nav-link {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    color: #008CFF !important;
+    background-color: white !important;
+    border-radius: 50px;
+}
+nav a:hover {
+    color: #22C647 !important;
+}
+nav .navbar-collapse {
+    flex-grow: 0;
+}
+nav button {
+    border: 0 !important;
+}
+nav span {
+    font-size: 25px;
+    font-weight: 900;
+    color: #008CFF;
+
+}
+.collapsed {
+    box-shadow: none !important;
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.collapsed:focus {
+    box-shadow: none !important;
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(180deg);
+}
+@media only screen and (min-width: 992px) {
+    nav .navbar-collapse {
+        margin-top: 0px;
+        margin-bottom: 0px;
+     }
+    nav img {
+        margin: 0;
+    }
+    nav .mb-3, nav .m-2{
+        margin: 5px !important;
+    }
+}
+
+/* Fin Navbar */
+
+
+
+/* Feed */
+Header .feed {
+    
+
+}
+.feed .post {
+    height: 400px;
+    max-width: 80%;
+    margin: 30px auto;
+    background-color: #008CFF;
+}
+/* Fin Feed */
+
+
+
+/* Farm */
+.farm {
+    height: 350px;
+    background-color:#22C647;
+    margin-bottom: 40px;
+}
+/* Fin Farm */
+
+
+
+
+/* Ottodiy */
+.ottodiy {
+    height: 300px;
+    background-color: #2D2D64;
+    margin-bottom: 40px;
+}
+/* fin Ottodiy */
+
+
+
+
+
+/* Contenido */
+.capsulas {
+    height: 300px;
+    background-color: #EAF1F6;2D2D64
+}
+/* Fin Contenido */
+
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    //padding-top: 10px;
+    background-color: #EAF1F6;
+}
+.img-mpr {
+    text-align: center;
+}
+.logo-mpr {
+    width: 80%;
+    text-align: center;
+}
+footer h5 {
+    text-align: justify;
+
+}
+/* Fin Footer */
