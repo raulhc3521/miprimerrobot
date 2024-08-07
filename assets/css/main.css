@@ -48,9 +48,11 @@ nav img {
     font-size: 20px !important;
     font-weight: 600 !important;
     text-align: center;
-    color: #008CFF !important;
-    background-color: white !important;
+    color: #ffffff !important;
+    background-color: rgb(16, 128, 233) !important;
     border-radius: 50px;
+    
+
 }
 nav a:hover {
     color: #22C647 !important;
@@ -145,18 +147,21 @@ Header .feed {
 /* Footer */
 footer {
     margin-top: 40px;
-    //padding-top: 10px;
+    padding-top: 30px;
     background-color: #EAF1F6;
 }
 .img-mpr {
     text-align: center;
+    margin-bottom:10px;
 }
 .logo-mpr {
-    width: 80%;
+   width: 60%;
     text-align: center;
 }
 footer h5 {
     text-align: justify;
-
+}
+.text-footer {
+    height: 100%;
 }
 /* Fin Footer */
