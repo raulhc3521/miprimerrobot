@@ -39,6 +39,9 @@ nav {
 nav img {
     margin: 3px;
 }
+.nav-item {
+
+}
 .nav-link {
     font-size: 20px !important;
     font-weight: 600 !important;
@@ -109,10 +112,42 @@ Header .feed {
 
 /* Farm */
 .farm {
-    height: 350px;
+    height: 400px;
+    background-image: url(../img/ssfarm.png);
+    background-position: center;
+    background-size: cover;
     background-color:#22C647;
-    margin-bottom: 40px;
+
+    padding: 0 !important;
 }
+.otto-msn {
+    float: right;
+    
+    
+}
+.otto-box {
+    position: relative;
+    top: -40px;
+    width: 350px;
+    height: 200px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/ottoenterfarm.png);
+}
+.txt-farm p{
+    margin: 0 15px 0 80px;
+    text-align: center;
+}
+.txt-farm button {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .otto-box {
+        width: 600px;
+    }
+}
+
 /* Fin Farm */
 
 
@@ -122,7 +157,7 @@ Header .feed {
 .ottodiy {
     height: 300px;
     background-color: #2D2D64;
-    margin-bottom: 40px;
+    margin: 150px 0 40px 0;
 }
 /* fin Ottodiy */
 
