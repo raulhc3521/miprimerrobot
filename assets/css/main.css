@@ -4,7 +4,11 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
-a, p {
+a {
+    font-size: 12px !important;
+    color: #22C647 !important;
+}
+p {
     font-size: 12px !important;
 }
 h1 {
@@ -52,8 +56,8 @@ nav img {
     
 
 }
-nav a:hover {
-    color: #22C647 !important;
+nav .collapse a:hover {
+    background-color: #22C647 !important;
 }
 nav .navbar-collapse {
     flex-grow: 0;
@@ -97,7 +101,7 @@ nav span {
 
 /* Feed */
 Header .feed {
-    
+    margin-top: 70px;
 
 }
 .feed .post {
@@ -105,7 +109,64 @@ Header .feed {
     max-width: 80%;
     margin: 30px auto;
     background-color: #008CFF;
+    padding: 0 !important;
 }
+header .img-post {
+    position: relative;
+    top: -10px;
+    left:-10px;
+    height: 400px;
+    margin: 0;
+    background-image: url(../img/nino.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+header .barra {
+    display: inline-block;
+    width: 25px;
+    height: 4px;
+    background-color: #7A838B;
+    margin: 5px auto;
+}
+header .barra-active {
+    background-color:#008CFF;
+    width: 30px;
+    height: 6px;
+}
+header .carrousel {
+    margin: 30px auto 30px auto !important;
+}
+header .etiquetanos {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .user {
+    position: relative;
+    left: -20px;
+    margin: 30px 0 0 0;
+}
+header .useracount {
+    
+    background-color: #008CFF;
+    padding: 10px 40px;
+    border-radius: 0 100px 100px 0;
+}
+
+header .useracount .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #2D2D64;
+    display: inline-block;
+}
+header .tag {
+    position: relative;
+    top: -18px;
+    display: inline-block;
+}
+
 /* Fin Feed */
 
 
@@ -136,15 +197,41 @@ Header .feed {
 }
 .txt-farm p{
     margin: 0 15px 0 80px;
+    padding: 6px 0 3px 0;
     text-align: center;
 }
 .txt-farm button {
-    margin: 0 auto;
+    font-weight: 600;
+    width: 120px;
+    height: 28px;
+    border: none;
+    border-radius: 20px;
+    background-color: #008CFF;
+    color: #ffffff;
+}
+.farm-button {
+    float: right;
+    margin-right: 85px;
 }
 
 @media only screen and (min-width: 768px) {
     .otto-box {
         width: 600px;
+    }
+    .txt-farm p {
+        margin: 0 15px 0 130px;
+        padding: 14px 0 3px 0;
+        font-size: 16px !important;
+    }
+    .farm-button {
+        float: right;
+        margin-right: 165px;
+        margin-top: 8px;
+    }
+    .txt-farm button {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
     }
 }
 
@@ -155,9 +242,35 @@ Header .feed {
 
 /* Ottodiy */
 .ottodiy {
-    height: 300px;
+    min-height: 300px;
     background-color: #2D2D64;
-    margin: 150px 0 40px 0;
+    margin: 150px 0 100px 0;
+}
+.logo-otto {
+    margin: 0 auto;
+    text-align: center;
+}
+.text-ottopage {
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 10px 30px 10px;
+}
+.text-ottopage a {
+    font-size: 20px !important;
+}
+@media only screen and (min-width: 992px) {
+    .ottodiy {
+        min-height: 280px;
+    }
+    .logo-otto {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+    }
+    .text-ottopage {
+        margin: 20px 10px 30px 10px;
+    }
+    
 }
 /* fin Ottodiy */
 
@@ -168,7 +281,78 @@ Header .feed {
 /* Contenido */
 .capsulas {
     height: 300px;
-    background-color: #EAF1F6;2D2D64
+    width: 360px !important;
+    margin: 0 auto;
+    text-decoration: none !important;
+    color: #2D2D64 !important;
+    padding: 0 !important;
+    border-radius: 60px;
+    text-align: center;
+}
+.capsulas:hover {
+    background-color: #EAF1F6;
+}
+.capsulas .fa-play {
+   font-size: 100px;
+}
+.capsulas h3 {
+    margin: 10px !important;
+}
+.txt-capsulas {
+    position: relative;
+    top: -220px;
+    text-align: center;
+    margin: 30px;
+    z-index: 1;
+}
+.capsulas .icono-video {
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+.capsulas video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.3;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+
+.guias {
+    height: 300px;
+    width: 360px !important;
+    margin: 0 auto;
+    text-decoration: none !important;
+    color: #2D2D64 !important;
+    padding: 0 !important;
+    border-radius: 60px;
+    text-align: center;
+}
+.guias:hover {
+    background-color: #EAF1F6;
+}
+.guias h3 {
+    margin: 10px !important;
+}
+.guias img {
+    position: relative;
+    top: 0;
+    width: 360px !important;
+    object-fit: fill;
+    z-index: 0;
+    opacity: 0.6;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.guias .fa-cloud-arrow-down{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 100px;
 }
 /* Fin Contenido */
 
@@ -190,8 +374,18 @@ footer {
 }
 footer h5 {
     text-align: justify;
+    margin-bottom: 80px;
 }
 .text-footer {
     height: 100%;
+}
+footer .logo-footer {
+    
+    height: 150px;
+    text-align: center;
+}
+.logo-footer img {
+    width: 200px !important;
+    max-width: 250px !important;
 }
 /* Fin Footer */
