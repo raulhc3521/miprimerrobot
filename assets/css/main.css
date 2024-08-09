@@ -110,6 +110,7 @@ Header .feed {
     margin: 30px auto;
     background-color: #008CFF;
     padding: 0 !important;
+    z-index: 0;
 }
 header .img-post {
     position: relative;
@@ -120,22 +121,26 @@ header .img-post {
     background-image: url(../img/nino.jpg);
     background-position: center;
     background-size: cover;
-    
+    z-index: 1;
 }
 header .barra {
-    display: inline-block;
+    display: inline-flex;
     width: 25px;
     height: 4px;
     background-color: #7A838B;
-    margin: 5px auto;
+    transition: 0.2s ease-in-out;
+
 }
 header .barra-active {
     background-color:#008CFF;
-    width: 30px;
-    height: 6px;
+    width: 32px;
+    height: 8px;
+    transition: 0.2s ease-in-out;
 }
 header .carrousel {
-    margin: 30px auto 30px auto !important;
+    width: 300px;
+    margin: 10px auto 10px auto !important;
+    
 }
 header .etiquetanos {
     margin: 0 auto;
@@ -143,17 +148,34 @@ header .etiquetanos {
 }
 
 header .user {
-    position: relative;
-    left: -20px;
-    margin: 30px 0 0 0;
+    margin-bottom: 30px;
 }
 header .useracount {
-    
+    display: none;
     background-color: #008CFF;
-    padding: 10px 40px;
-    border-radius: 0 100px 100px 0;
+    padding: 10px 30px 30px 60px;
+    border-radius: 0 150px 150px 0;
 }
-
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+@media only screen and (min-width: 768px){
+    header .useracount {
+        display: block;
+    }
+    header .carrousel {
+        width: 300px;
+        margin: 30px auto 30px auto !important;
+    }
+    header .user {
+        position: relative;
+        left: -20px;
+        margin-top: 30px;
+    }
+}
 header .useracount .avatar {
     width: 50px;
     height: 50px;
